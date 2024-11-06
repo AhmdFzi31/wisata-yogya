@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata | Candi Borobudur</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/candi.css">
+</head>
+
+<body>
+    <img src="/borobudur.png" alt="" id="background-img">
+    <!-- Navigasi -->
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link about-me" href="/html/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tempat Wisata
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/html/candi.html">Wisata Candi</a>
+                            <a class="dropdown-item" href="/html/merapi.html">Wisata Gunung Merapi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Kuliner</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Konten -->
+
+        <div id="home" class="container mt-5">
+            <h2>Candi Borobudur</h2>
+            <img src="/Candi.png" alt="Placeholder Image" class="img-fluid mb-4">
+            <p><strong>Sejarah Singkat Candi Borobudur</strong></p>
+            <p>Sejarah singkat Candi Borobudur berkaitan dengan masuknya agama Buddha di Indonesia seperti dikutip dari
+                e-Modul Mengenal Arsitektur Tradisional Indonesia karya Arifin Suryo Nugroho.
+
+                Candi Borobudur dibangun oleh para penganut Buddha Mahayana pada masa kejayaan Dinasti Syailendra.
+                Borobudur pertama kali dibangun atas inisiatif Raja Samaratungga sekitar tahun 824 Masehi.
+
+                Meski begitu, Candi Borobudur selesai dibangun menjelang tahun 900 Masehi pada masa pemerintahan Ratu
+                Pramudawardhani, putri Raja Samaratungga. Arsitek yang berjasa dalam merancang candi tersebut ialah
+                Gunadharma.
+
+                Kabarnya, kemegahan Borobudur sempat sirna berabad-abad terkubur tanah dan debu vulkanik yang
+                diperkirakan efek erupsi Gunung Merapi.
+
+                Namun, candi tersebut berhasil direstorasi kembali oleh pemerintahan Thomas Stamford Raffles saat
+                menjabat Gubernur Jenderal di Pulau Jawa tahun 1911.
+
+                Kala itu Raffles meminta bantuan Insinyur Belanda Christian Cornelius untuk memeriksa kondisi bangunan
+                Candi Borobudur yang terkubur dan membenahinya.
+
+                Candi Borobudur dinobatkan sebagai Situs Warisan Dunia UNESCO pada 1991 karena beragam alasan di
+                antaranya merupakan kompleks candi terbesar di Indonesia.
+            </p>
+
+
+
+        </div>
+    </div>
+    <!--  -->
+    <footer class="footer fixed-bottom text-center">
+        <div class="contain">
+            <span class="footer-link">© 2023 Website Sederhana. Semua hak dilindungi.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var chartContainer = document.getElementById('chartContainer');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        chartContainer.classList.add('visible');
+                        observer.unobserve(chartContainer);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observer.observe(chartContainer);
+        });
+    </script>
+    <script>
+        // Mengubah warna navbar dan footer saat digulir
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const footer = document.querySelector('footer');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                footer.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+                footer.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

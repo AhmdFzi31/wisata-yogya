@@ -1,0 +1,78 @@
+body {
+    background: url(cinematic.mp4);
+}
+
+.navbar {
+    background-color: #28a745; /* Warna hijau */
+}
+
+.nav-item {
+    transition: transform 0.2s, box-shadow 0.2s; /* Tambahkan transisi untuk box-shadow */
+}
+
+.nav-item:active {
+    transform: scale(0.95); /* Efek skala saat diklik */
+}
+
+.nav-link {
+    font-size: 1.5rem; /* Ukuran font untuk semua link */
+    color: white; /* Mengubah warna teks menjadi putih */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.nav-link.about-me {
+    font-size: 1.5rem; /* Ukuran font yang lebih besar untuk About Me */
+}
+
+/* Garis vertikal */
+.vertical-line {
+    border-left: 2px solid white; /* Garis vertikal putih */
+    height: 30px; /* Tinggi garis */
+    margin: 0 15px; /* Jarak antara garis dan link */
+    margin-top: 5%;
+}
+
+/* Outline saat hover */
+.nav-link:hover {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Outline putih saat hover */
+}
+
+/* Outline saat diklik */
+.nav-link:active {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 1); /* Outline lebih tebal saat diklik */
+}
+
+
+.dropdown-menu {
+    display: none; /* Sembunyikan dropdown secara default */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk opacity dan transform */
+    transform: translateY(-10px); /* Pindahkan dropdown sedikit ke atas */
+}
+
+.dropdown-menu {
+    background-color: #28a745;
+    background: #28a745;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block; /* Tampilkan dropdown saat aktif */
+    opacity: 1; /* Ubah opacity menjadi 1 */
+    transform: translateY(0); /* Kembalikan ke posisi normal */
+    color: #28a745;
+}
+
+/* Gaya untuk konten */
+.container {
+    text-align: center; /* Pusatkan teks */
+}
+
+.img-fluid {
+    max-width: 100%; /* Responsif */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+
+/*Footer*/
+.bg-green {
+    background-color: #28a745;
+}

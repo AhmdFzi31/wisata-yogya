@@ -190,3 +190,42 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
 }
+
+.hero {
+    background-image: url('https://source.unsplash.com/1600x400/?team');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.team-member {
+    margin-bottom: 30px; /* Jarak antar anggota tim */
+    transition: transform 0.3s ease; /* Efek transisi */
+}
+.team-member:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+.team-member img {
+    border-radius: 50%; /* Membuat gambar anggota tim menjadi bulat */
+    width: 150px; /* Ukuran gambar */
+    height: 150px; /* Ukuran gambar */
+    border: 3px solid #007bff; /* Border gambar */
+    margin-bottom: 15px; /* Jarak antara gambar dan nama */
+}
+.team-member h5 {
+    font-weight: bold;
+}
+.team-member p {
+    color: #000000; /* Warna teks untuk posisi */
+}
+/* Menghindari konten tertutup oleh navbar */
+.content {
+    padding-top: 100px; /* Jarak untuk konten utama */
+}

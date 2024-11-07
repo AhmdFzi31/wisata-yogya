@@ -10,14 +10,14 @@ body {
 }
 
 .navbar, .footer {
-    background-color: rgba(255, 255, 255, 0.2); /* Transparan */
+    background-color:  transparent; /* Transparan */
     backdrop-filter: blur(10px); /* Efek blur */
     transition: background-color 0.3s ease; /* Transisi untuk perubahan warna */
     z-index: 1;
 }
 
 .navbar.scrolled, .footer.scrolled {
-    background-color: rgba(255, 255, 255, 0.8); /* Warna navbar saat digulir */
+    background-color: rgba(0, 0, 0, 0.8); /* Warna navbar saat digulir */
 }
 
 .nav-link, .footer-link {
@@ -59,12 +59,12 @@ body {
 
 /* Outline saat hover */
 .nav-link:hover {
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Outline putih saat hover */
+    box-shadow: none; /* Outline putih saat hover */
 }
 
 /* Outline saat diklik */
 .nav-link:active {
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 1); /* Outline lebih tebal saat diklik */
+    box-shadow: none; /* Outline lebih tebal saat diklik */
 }
 
 
@@ -76,7 +76,11 @@ body {
 }
 
 .dropdown-menu {
-    background-color: white;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    color: #ffffff;
 }
 
 .dropdown.show .dropdown-menu {
@@ -88,8 +92,7 @@ body {
 /* Gaya untuk konten */
 .container {
     text-align: center; /* Pusatkan teks */
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
     z-index: -1;
     flex: 1; /* Membuat konten utama mengisi ruang yang tersisa */
     display: flex;
@@ -121,7 +124,7 @@ body {
 .chart-container {
     width: 100%;
     max-width: 500px;
-    background-color: #d3d3d3;
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
     margin: 50px auto;
@@ -149,7 +152,7 @@ body {
     position: absolute;
     right: -30px;
     top: 0;
-    color: #000;
+    color: #ffffff;
 }
 @media (max-width: 576px) {
     .label {
@@ -172,4 +175,21 @@ body {
     bottom: 0;
     width: 100%;
     padding: 10px 0;
+}
+
+.preloader {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background-color: white;
+}
+
+.loading {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }

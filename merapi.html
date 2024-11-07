@@ -10,7 +10,12 @@
 </head>
 
 <body>
-    <img src="merapi.png" alt="" id="background-img">
+    <div class="preloader">
+        <div class="loading">
+            <img src="loading_data.gif">
+        </div>
+    </div>
+    <img src="volcano.jpg" alt="" id="background-img">
     <!-- Navigasi -->
     <div class="main">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -48,30 +53,29 @@
             <h2>Gunung Merapi</h2>
             <img src="gng.jpg" alt="Placeholder Image" class="img-fluid mb-4">
             <p><strong>Sejarah Singkat Gunung Merapi</strong></p>
-            <p>Sejarah singkat Candi Borobudur berkaitan dengan masuknya agama Buddha di Indonesia seperti dikutip dari
-                e-Modul Mengenal Arsitektur Tradisional Indonesia karya Arifin Suryo Nugroho.
-
-                Candi Borobudur dibangun oleh para penganut Buddha Mahayana pada masa kejayaan Dinasti Syailendra.
-                Borobudur pertama kali dibangun atas inisiatif Raja Samaratungga sekitar tahun 824 Masehi.
-
-                Meski begitu, Candi Borobudur selesai dibangun menjelang tahun 900 Masehi pada masa pemerintahan Ratu
-                Pramudawardhani, putri Raja Samaratungga. Arsitek yang berjasa dalam merancang candi tersebut ialah
-                Gunadharma.
-
-                Kabarnya, kemegahan Borobudur sempat sirna berabad-abad terkubur tanah dan debu vulkanik yang
-                diperkirakan efek erupsi Gunung Merapi.
-
-                Namun, candi tersebut berhasil direstorasi kembali oleh pemerintahan Thomas Stamford Raffles saat
-                menjabat Gubernur Jenderal di Pulau Jawa tahun 1911.
-
-                Kala itu Raffles meminta bantuan Insinyur Belanda Christian Cornelius untuk memeriksa kondisi bangunan
-                Candi Borobudur yang terkubur dan membenahinya.
-
-                Candi Borobudur dinobatkan sebagai Situs Warisan Dunia UNESCO pada 1991 karena beragam alasan di
-                antaranya merupakan kompleks candi terbesar di Indonesia.
+            <p>Gunung Merapi adalah gunung api aktif yang terletak di Pulau Jawa, Indonesia.
+            Gunung ini memiliki ketinggian 2.930 meter di atas permukaan laut dan terletak di perbatasan Provinsi Jawa Tengah dan Yogyakarta.
+            Gunung yang kerap disebut sebagai "Wedhus Gembel" ini merupakan salah satu gunung api teraktif di Indonesia dan bahkan di dunia. 
+            Berikut adalah sejarah kemunculan Gunung Merapi sampai menjadi gunung api teraktif.
             </p>
-
-
+<p><strong>Kemunculan Gunung Merapi</strong></p>
+<p>Gunung Merapi terbentuk pada masa pleistosen sekitar 400.000 tahun yang lalu. Gunung ini terbentuk dari hasil letusan vulkanik yang terus menerus dan menghasilkan endapan lahar dan batuan vulkanik.
+    Dalam sejarahnya, Gunung Merapi pernah meletus sekitar 68 kali dan selalu menjadi ancaman bagi masyarakat di sekitarnya.
+</p>
+<p><strong>Berbagai Letusan Gunung Merapi</strong></p>
+<p>Gunung Merapi merupakan gunung api aktif yang terletak di Pulau Jawa, Indonesia. Ancaman meletusnya Gunung Merapi selalu menghantui masyarakat di sekitarnya. Karena tak jarang peristiwa letusan tersebut memakan korban jiwa dalam jumlah yang tidak sedikit.</p>
+<p>Berikut adalah beberapa peristiwa letusan Gunung Merapi yang pernah terjadi dalam sejarahnya.</p>
+<p><strong>1. Letusan tahun 1006 Masehi</strong></p>
+<p>Letusan besar Gunung Merapi terjadi pada tahun 1006 Masehi yang mengakibatkan sekitar 1.000 orang tewas. Letusan ini menjadi letusan terbesar yang pernah terjadi di Gunung Merapi dalam sejarahnya.Letusan besar ini menghasilkan aliran lava yang panjangnya mencapai 11 kilometer dan memisahkan dua wilayah di sekitarnya.</p>
+<p><strong>2. Letusan tahun 1930</strong></p>
+<p>Letusan pada tahun 1930 mengakibatkan sekitar 1.300 orang tewas dan memporak-porandakan beberapa desa di sekitarnya. Letusan ini menghasilkan aliran lava yang membanjiri desa-desa di sekitarnya.</p>
+<p><strong>3. Letusan tahun 1994</strong></p>
+<p>Letusan pada tahun 1994 mengakibatkan sekitar 60 orang tewas dan 1.300 orang mengungsi. Awan panas dan lava pijar yang dihasilkan kemudian menyebar ke seluruh penjuru Gunung Merapi.</p>
+<p><strong>4. Letusan tahun 2006</strong></p>
+<p>Letusan pada tahun 2006 ini juga menghasilkan awan panas dan lava pijar yang menyebar ke sekitar Gunung Merapi. Sekitar 5.000 orang mengungsi akibat peristiwa ini.</p>
+<p><strong>5. Letusan tahun 2010</strong></p>
+<p>Letusan pada tahun 2010 merupakan letusan terbaru Gunung Merapi yang mengakibatkan korban jiwa sebanyak 353 orang dan merusak sekitar 19 ribu hektar lahan pertanian.Akibat letusan ini, muncul awan panas yang meluncur dengan kecepatan 100 kilometer per jam dan menghancurkan segala yang ada di jalurnya.</p>
+<P>Itulah ualsan mengenai sejarah Gunung Merapi sebagai salah satu gunung api paling aktif di Indonesia. Sejarah Gunung Merapi menunjukkan betapa pentingnya penanganan bencana alam secara cepat dan efektif.</P>
 
         </div>
     </div>
@@ -112,6 +116,12 @@
                 navbar.classList.remove('scrolled');
                 footer.classList.remove('scrolled');
             }
+        });
+    </script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.preloader').delay('1000').fadeOut();
         });
     </script>
 </body>

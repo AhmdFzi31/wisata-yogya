@@ -10,7 +10,12 @@
 </head>
 
 <body>
-    <img src="borobudur.png" alt="" id="background-img">
+    <div class="preloader">
+        <div class="loading">
+            <img src="loading_data.gif">
+        </div>
+    </div>
+    <img src="Candi.jpg" alt="" id="background-img">
     <!-- Navigasi -->
     <div class="main">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -112,6 +117,12 @@
                 navbar.classList.remove('scrolled');
                 footer.classList.remove('scrolled');
             }
+        });
+    </script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.preloader').delay('1000').fadeOut();
         });
     </script>
 </body>
